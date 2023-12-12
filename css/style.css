@@ -1,0 +1,190 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(-45deg, #2c0735, #642b73, #2c0735, #642b73);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    background: #0f0f0f; /* Cor de fundo para o header */
+    color: white; /* Cor do texto no header */
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden; /* Limpa o float */
+    display: flex; /* Torna o header um contêiner flexível */
+    justify-content: space-between; /* Distribui os itens flexíveis no container, com espaçamento entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro do container */
+}
+
+#professor, #aluno {
+    margin-left: 40px; 
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Torna a lista um contêiner flexível */
+}
+
+nav li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Para ocupar o espaço restante */
+    margin-top: 100px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; /* Adicionado para garantir que estejam em linha */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+    color: white;
+}
+
+form {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    width: 70%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*professor-aluno*/
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.toggle-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .toggle-btn {
+    background-color: #003366;
+}
+
+a {
+    display: block;
+    color: #0056b3;
+    text-decoration: none;
+    margin-top: 10px; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #003366;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+footer {
+    background: #0f0f0f; /* Cor de fundo para o footer */
+    color: white; /* Cor do texto no footer */
+    padding: 10px; /* Adicionei um valor maior para o padding para melhorar a aparência */
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+.botoes_criar_turma {
+    display: flex;
+    justify-content: space-between; /* Isso coloca os botões no início e no final do contêiner */
+    margin-top: 20px; /* Adicione margem superior para separar os botões do restante do formulário */
+}
+
+/* Estilo adicional para os botões se necessário */
+.botoes_criar_turma button {
+    padding: 10px 20px;
+}
+
+/* Estilo específico para o botão Cancelar, se necessário */
+.botoes_criar_turma .cancelar {
+    background-color: red;
+    color: white;
+    margin-right: 10px; 
+}
+
+/* Estilo específico para o botão Criar Turma, se necessário */
+.botoes_criar_turma .criar-turma {
+    background-color: green;
+    color: white;
+}
