@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    /* overflow: hidden; Remova ou ajuste esta linha */
     height: 100vh;
     background: linear-gradient(-45deg, #2c0735, #642b73, #2c0735, #642b73);
     background-size: 400% 400%;
@@ -12,18 +12,18 @@ body {
 }
 
 header {
-    background: #0f0f0f; /* Cor de fundo para o header */
-    color: white; /* Cor do texto no header */
+    background: #0f0f0f;
+    color: white;
     padding: 10px;
     position: absolute;
     top: 0;
     width: 100%;
-    overflow: hidden; /* Limpa o float */
-    display: flex; /* Torna o header um contêiner flexível */
-    justify-content: space-between; /* Distribui os itens flexíveis no container, com espaçamento entre eles */
-    align-items: center; /* Alinha os itens verticalmente no centro do container */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.3s;
 }
-
 #professor, #aluno {
     margin-left: 40px; 
 }
@@ -56,7 +56,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-grow: 1; /* Para ocupar o espaço restante */
-    margin-top: 100px;
+    margin-top: 280px;
 }
 
 .main-menu {
