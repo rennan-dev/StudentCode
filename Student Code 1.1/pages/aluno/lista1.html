@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atividades</title>
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--main css-->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+  <link rel="icon" href="../../Imagens/icone2.png">
+</head>
+
+<body>
+  <!--header start-->
+  <header id="header">
+    <!--navigation start-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar">
+      <div class="container container-fluid">
+        <div class="navbar-header">
+          <a href="../../index.html" class="navbar-brand float-end">
+            <img src="../../Imagens/logo.png" alt="logo" class="img-reponsive custom-logo">
+          </a>
+          <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="d-flex flex-column" style="align-items: flex-end;">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ms-auto custom-ul">
+              <li class="nav-item dropdown custom-li">
+                <a class="nav-link dropdown-toggle" id="userMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Perfil</a>
+                <div class="dropdown-menu" aria-labelledby="userMenu">
+                    <a class="dropdown-item" href="../perfil.html" id="profileLink">Meu Perfil</a>
+                    <a class="dropdown-item" href="../../index.html" id="profileLink">Turmas</a>
+                    <a class="dropdown-item" href="../signin.html" id="logoutLink">Sair</a>
+                </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--navigation start-->
+
+  </header>
+  <!--header end-->
+
+  <h3 class="text-center mb-4 mt-3">IP1 - INTRODUÇÃO À PROGRAMAÇÃO I</h3>
+
+    <!-- Main Content -->
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="position-sticky">
+            <!-- Aumento de Espaço no Topo -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active incorrect" href="#" data-question="1" data-bs-toggle="collapse"
+                        data-bs-target="#question-description">
+                        Questão 1
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link incorrect" href="#" data-question="2" data-bs-toggle="collapse"
+                        data-bs-target="#question-description2">
+                        Questão 2
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link correct" href="#" data-question="3" data-bs-toggle="collapse"
+                        data-bs-target="#question-description3">
+                        Questão 3
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+      <!-- Sidebar End -->
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Lista 1</h1>
+          <div class="btn-group" style="position: absolute;  right: 25px;">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Linguagem
+            </button>
+            <div class="dropdown-menu dropdown-menu-end">
+              <button class="dropdown-item" type="button">C</button>
+              <button class="dropdown-item" type="button">Java</button>
+              <button class="dropdown-item" type="button">Python</button>
+            </div>
+          </div>  
+        </div>
+        
+        <!-- Box Principal para Código em C -->
+        <div class="card mb-4 accordion" id="accordionExample">
+          <div class="card-body accordion-item">
+
+
+            <div class="collapse mb-4" id="question-description">
+              <h3><b>Média</b></h3>
+              <p>Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.</p>
+              <p><b>Entrada</b><br>
+                O arquivo de entrada contém 2 valores com uma casa decimal cada um.</p>
+              <p><b>Saída</b><br>
+                Imprima a mensagem "MEDIA" e a média do aluno conforme exemplo abaixo, com 5 dígitos após o ponto decimal e com um espaço em branco antes e depois da igualdade. Utilize variáveis de dupla precisão (double) e como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p>
+                <div class="container mt-4">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Entradas</th>
+                        <th>Saída</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          
+                          <p class="font-weight-bold">5.0</p>
+                          <p class="font-weight-bold">7.1</p>
+                          
+                        </td>
+                        <td>
+                          <p class="font-weight-bold">MEDIA = 6.43182</p>
+                        </td>
+                      </tr>
+                      <!-- Repita esta linha para outros conjuntos de dados -->
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
+
+            <div class="collapse  mb-4" id="question-description2">
+              <h3><b>Salário com Bônus</b></h3>
+              <p>
+                Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+
+                <br><br><b>Entrada</b><br>
+                O arquivo de entrada contém um texto (primeiro nome do vendedor) e 2 valores de dupla precisão (double) com duas casas decimais, representando o salário fixo do vendedor e montante total das vendas efetuadas por este vendedor, respectivamente.
+                
+                <br><br><b>Saída</b><br>
+                Imprima o total que o funcionário deverá receber, conforme exemplo fornecido.
+              </p>
+              <div class="container mt-4">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Entradas</th>
+                      <th>Saída</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        
+                        <p class="font-weight-bold">Joao</p>
+                        <p class="font-weight-bold">500.00</p>
+                        <p class="font-weight-bold">1230.30</p>
+                        
+                      </td>
+                      <td>
+                        <p class="font-weight-bold">TOTAL = R$ 684.54</p>
+                      </td>
+                    </tr>
+                    <!-- Repita esta linha para outros conjuntos de dados -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+          </div>
+
+
+            <div class="collapse  mb-4" id="question-description3">
+              <h3><b>Cálculo Simples</b></h3>
+              <p>
+                Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e mostre o valor a ser pago.
+
+                <br><br><b>Entrada</b>
+                O arquivo de entrada contém duas linhas de dados. Em cada linha haverá 3 valores, respectivamente dois inteiros e um valor com 2 casas decimais.
+
+                <br><br><b>Saída</b>
+                A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo, lembrando de deixar um espaço após os dois pontos e um espaço após o "R$". O valor deverá ser apresentado com 2 casas após o ponto.
+              </p>
+
+              <!--exemplo-->
+              <div class="container mt-4">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Entradas</th>
+                      <th>Saída</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        
+                        <p class="font-weight-bold">12 1 5.30</p>
+                        <p class="font-weight-bold">16 2 5.10</p>
+                        
+                      </td>
+                      <td>
+                        <p class="font-weight-bold">VALOR A PAGAR: R$ 15.50</p>
+                      </td>
+                    </tr>
+                    <!-- Repita esta linha para outros conjuntos de dados -->
+                  </tbody>
+                </table>
+                
+              </div>
+              
+            </div>
+
+
+            <div id="editor"></div>
+          </div>
+          <!-- Botões para Compilar e Submeter -->
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-primary me-2">Compilar</button>
+          <button type="button" class="btn btn-success">Submeter</button>
+        </div>
+        </div>
+
+      </main>
+      <!-- Main Content End -->
+    </div>
+  </div>
+  <!-- Main Content End -->
+
+  <!--footer start-->
+  <footer id="footer" class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container p-4">
+      <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+      <p>Universidade Federal do Amazonas</p>
+      <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+  </footer>
+  <!--footer end-->
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+    <script>
+        // Carrega o Módulo de Inicialização do Monaco
+        require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor/min/vs' } });
+        require(['vs/editor/editor.main'], function () {
+            // Configuração do editor
+            monaco.editor.create(document.getElementById('editor'), {
+                value: "int main() {\n\t// Seu código C aqui\n}\n",
+                language: 'c',
+                theme: 'vs',
+            });
+        });
+    </script>
+
+</body>
+
+</html>
